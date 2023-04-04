@@ -1,0 +1,187 @@
+@charset "UTF-8";
+body { 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+    margin:0 auto;
+    background:white;
+    color:rgb(68, 68, 68);
+    overflow-x:hidden;
+}
+.inner_layout1 {
+    max-width:720px;
+    height:auto;
+    margin:0 auto;
+}
+.inner_layout2 {
+    max-width:1460px;
+    height:auto;
+    margin:0 auto;
+}
+.inner_layout3 {
+    max-width:1460px;
+    height:auto;
+    margin:0 auto;
+}
+.inner_layout99{
+    max-width:720px;
+    height:auto;
+    margin:0 auto;
+}
+.empty {
+    display:block;
+    content:"";
+}
+a {
+    color:inherit
+}
+/* Layout */
+
+    /* Layout - Header */
+    .header {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        z-index:9999;
+        background:transparent;
+        transition:.4s;
+    }
+    .header.active {
+        background:rgba(255, 255, 255, .7);
+    }
+    .header .header_wrap {
+        height:50px;
+    }
+
+        /* Header - Logo */
+        .header .header_wrap .h_logo > a {
+            display:block;
+            position:absolute;
+            top:10px;
+            left:20px;
+            width:104px;
+            height:50px;
+            background-image:url('source/img/h_logo2.png');
+            background-size:104px auto;
+            background-repeat:no-repeat;
+            background-position:50% 50%;
+        }
+
+        /* Header - Nav */
+        .ham_btn {
+            display:block;
+            position:absolute;
+            top:10px;
+            right:20px;
+            line-height:50px;
+            border:0;
+            background:transparent;
+        }
+        .ham_btn i {
+            font-size:30px;
+        }
+
+            
+    /* Layout - Footer */
+    .footer {
+        display:block;
+        width:100vw;
+        height:40vh;
+        background:RGB(28, 27, 27);
+        color:#ffffff81;
+    }
+    .footer .footer_wrap {
+        display:block;
+        margin:0 20px;
+    }
+        /* Footer - Top */
+        .footer .footer_top {
+            display:flex;
+            justify-content:space-between;
+            padding:60px 0 20px;
+            border-bottom:1px solid #ffffff81;
+        }
+            /* Footer - left */
+            .footer_top .top_left {
+                display:flex;
+                width:50%;
+            }
+            .footer_top .top_left .f_logo {
+                width:100px;
+                height:auto;
+                margin-right:30px;
+            }
+            .footer_top .top_left .f_logo img {
+                display:block;
+                width:100%;
+            }
+            .footer_top .top_left .top_text {
+            }
+            .footer_top .top_left .f_info {
+                display:flex;
+                flex-wrap:wrap;
+            }
+            .footer_top .top_left .f_info li {
+                margin:5px 20px;
+                font-size:13px;
+            }
+            /* Footer - right */
+            .footer_top .top_right {
+                position:relative;
+                width:50%;
+            }
+            .footer_top .top_right .f_connect {
+                position:absolute;
+                top:0;
+                right:20px;
+            }
+            .footer_top .top_right .f_connect li {
+                display:inline-block;
+                width:20px;
+                height:18px;
+            }
+            .footer_top .top_right .f_connect li a {
+                width:20px;
+                height:18px;
+                font-size:18px;
+            }
+            .footer_top .top_right .f_family {
+                position:absolute;
+                bottom:20px;
+                right:10px;
+                width:110px;
+                height:30px;
+                text-align:center;
+                border:1px solid #ffffff81;
+            }
+            .footer_top .top_right .f_family a {
+                display:block;
+                width:110px;
+                line-height:30px;
+                font-size:12px;
+
+            }
+        /* Footer - Bottom */
+        .footer .footer_bottom {
+            margin:20px 0 10px;
+        }
+        .footer .footer_bottom .f_bottom_logo {
+            display:inline-block;
+            width:100px;
+            margin:10px 15.5px;
+            
+        }
+        .footer .footer_bottom .f_bottom_logo a {
+            display:inline-block;
+            width:100%;
+            height:100%;
+        }
+        .footer .footer_bottom .f_bottom_logo a img {
+            width:80%;
+            height:100%;
+            opacity:0.7;
+            transition:.3s;
+        }
+        .footer .footer_bottom .f_bottom_logo a:hover img {
+            opacity:1;
+        }
