@@ -12,7 +12,6 @@
 }
 .inner_layout6 {
     width:100%;
-    height:440px;
     margin:0 auto;
 }
 .inner_layout7 {
@@ -399,7 +398,6 @@
     .content_wrap .content1 .content_inside .content_right .right_imgs > ul > li {
         display:none;
         width:100%;
-        height:168px;
     }
     .content_wrap .content1 .content_inside .content_right .right_imgs > ul:nth-child(1) > li.active {
         display:block;
@@ -410,7 +408,6 @@
 
     .content_wrap .content1 .content_inside .content_right .right_imgs > ul > li a {
         width:100%;
-        height:168px;
     }
     .content_wrap .content1 .content_inside .content_right .right_imgs > ul > li a img {
         display:block;
