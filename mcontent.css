@@ -8,7 +8,7 @@
 .inner_layout5 {
     width:100%;
     height:auto;
-    margin:130px auto 0;
+    margin:0 auto;
 }
 .inner_layout6 {
     width:100%;
@@ -161,8 +161,7 @@
         }   
         .nav_btn > ul > li {
             display:block;
-            flex:1;
-            width:auto;
+            width:16.6666%;
             height:70px;
             margin:20px 25px;
         }
@@ -867,17 +866,14 @@
     }
 
 @media (max-width:420px){
-    .inner_layout5 {
-        margin: 130px auto 0;
-    }
     .dots {
-        top:44%;
+        top:36%;
     }
     .slideBtn_left {
-        top:30%;
+        top:25%;
         }
     .slideBtn_right {
-        top:30%;
+        top:25%;
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(1) {
         background-position: 75% 50%
@@ -894,7 +890,7 @@
 }
 @media (min-width:421px){
     .dots {
-        top:44%;
+        top:36%;
     }
     .slideBtn_left {
         top:25%;
@@ -902,51 +898,27 @@
     .slideBtn_right {
         top:25%;
     }
-}
-@media (min-width:422px){
-        .content_wrap .content1 .content_inside .content_left > a:nth-child(1) {
-        background-position: 75% 50%
-    }
-    .content_wrap .content1 .content_inside .content_left > a:nth-child(2) {
-        background-position: 75% 50%
-    }
-    .content_wrap .content1 .content_inside .content_left > a:nth-child(3) {
-        background-position: 75% 50%
-    }
-    .content_wrap .content1 .content_inside .content_left > a:nth-child(4) {
-        background-position: 75% 50%
-    }
-}
-@media (min-width:445px){
-    .inner_layout5 {
-        margin: 0 auto 0;
-    }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(1) {
-        background-position: 103% 50%
+        background-position:90% 50%;
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(2) {
-        background-position: 103% 50%
+        background-position: 90% 50%
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(3) {
-        background-position: 103% 50%
+        background-position: 90% 50%
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(4) {
-        background-position: 103% 50%
+        background-position: 90% 50%
     }
 }
-@media (min-width:550px){}
-@media (min-width:663px){
-    .nav_btn > ul {
-        height: 215px;
-    }
+@media (min-width:600px){
     .dots {
-        top:50%;
+        top:41%;
     }
     .slideBtn_left {
-    top:35%;
-    }
+        top:30%;
+        }
     .slideBtn_right {
-        top:35%;
+        top:30%;
     }
-
 }
