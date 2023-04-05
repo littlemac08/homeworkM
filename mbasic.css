@@ -8,22 +8,12 @@ body {
     overflow-x:hidden;
 }
 .inner_layout1 {
-    max-width:720px;
-    height:auto;
-    margin:0 auto;
-}
-.inner_layout2 {
-    max-width:1460px;
-    height:auto;
-    margin:0 auto;
-}
-.inner_layout3 {
-    max-width:1460px;
+    max-width:680px;
     height:auto;
     margin:0 auto;
 }
 .inner_layout99{
-    max-width:720px;
+    max-width:680px;
     height:auto;
     margin:0 auto;
 }
@@ -86,7 +76,7 @@ a {
     .footer {
         display:block;
         width:100vw;
-        height:40vh;
+        height:42vh;
         background:RGB(28, 27, 27);
         color:#ffffff81;
     }
@@ -98,7 +88,7 @@ a {
         .footer .footer_top {
             display:flex;
             justify-content:space-between;
-            padding:60px 0 20px;
+            padding:10px 0 10px;
             border-bottom:1px solid #ffffff81;
         }
             /* Footer - left */
@@ -107,7 +97,7 @@ a {
                 width:50%;
             }
             .footer_top .top_left .f_logo {
-                width:100px;
+                width:50px;
                 height:auto;
                 margin-right:30px;
             }
@@ -147,7 +137,7 @@ a {
             }
             .footer_top .top_right .f_family {
                 position:absolute;
-                bottom:20px;
+                bottom:0px;
                 right:10px;
                 width:110px;
                 height:30px;
@@ -167,8 +157,8 @@ a {
         }
         .footer .footer_bottom .f_bottom_logo {
             display:inline-block;
-            width:100px;
-            margin:10px 15.5px;
+            width:60px;
+            margin:10px 25px;
             
         }
         .footer .footer_bottom .f_bottom_logo a {
@@ -177,10 +167,11 @@ a {
             height:100%;
         }
         .footer .footer_bottom .f_bottom_logo a img {
-            width:80%;
+            width:100%;
             height:100%;
             opacity:0.7;
             transition:.3s;
+            object-fit:contain
         }
         .footer .footer_bottom .f_bottom_logo a:hover img {
             opacity:1;
