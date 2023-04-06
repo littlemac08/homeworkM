@@ -84,6 +84,11 @@ elGnbSubArticle1.forEach(function(el, index){
 })
 
 
+
+
+
+
+
 /* main slider */
 const slides = document.querySelector('.banner_wrap .slider') //슬라이더 선택
 const slideContent = document.querySelectorAll('.banner_wrap .slider .slider_content') //슬라이더 컨텐츠 선택
@@ -145,6 +150,17 @@ dotBtn.forEach(function(dot,dotNumber){
     })
 })
 
+/* swipe */
+const elContainer = document.querySelector('.banner_wrap')
+let startPos = 0;
+let offset = 0;
+let curPos = 0;
+const screenWidth = elContainer.clientWidth;
+
+
+
+
+
 /* sub slider */
 const elSubNextBtn = document.querySelector('.nav_side .next_btn')
 const elSubPrevBtn = document.querySelector('.nav_side .prev_btn')
@@ -191,3 +207,49 @@ elGender.forEach(function(gender, index){
         genderIdx = index;
     })
 })
+
+
+const elHamBtn = document.querySelector('.ham_btn') 
+const elHamImg1 = document.querySelector('.fa-bars') 
+const elHamImg2 = document.querySelector('.fa-x') 
+const elSubMenu = document.querySelector('.ham_menu')
+const elSubMenus = document.querySelector('.ham_menu_wrap > li:nth-child(1)')
+const elSubMenuSub2 = document.querySelector('.model_sub_wrap')
+const elSubImg1 = document.querySelector('.fa-angle-down')
+const elSubImg2 = document.querySelector('.fa-angle-up')
+
+
+function showSub(){
+    elHamImg1.style.display = 'none'
+    elHamImg2.style.display = 'inline-block'
+    elSubMenu.style.transition = '.3s'
+    elSubMenu.style.left = '0'
+    elheader.style.background = 'rgba(255,255,255,.7)'
+}
+function closeSub(){
+    elHamImg1.style.display = 'inline-block'
+    elHamImg2.style.display = 'none'
+    elSubMenu.style.transition = '.3s'
+    elSubMenu.style.left = '-100%'
+    elheader.style.background = 'transparent'
+    elSubMenuSub2.classList.remove('acitve')
+}
+
+
+elHamImg1.addEventListener('click', showSub)
+elHamImg2.addEventListener('click', closeSub)
+
+function showSub2() {
+    if (!elSubMenuSub2.classList.contains('active')) {
+      elSubMenuSub2.classList.add('active');
+      elSubImg1.style.display = 'none';
+      elSubImg2.style.display = 'block';
+    } else {
+      elSubMenuSub2.classList.remove('active');
+      elSubImg1.style.display = 'block';
+      elSubImg2.style.display = 'none';
+    }
+  }
+
+
+elSubMenus.addEventListener('click', showSub2)

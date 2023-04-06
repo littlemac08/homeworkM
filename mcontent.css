@@ -879,13 +879,13 @@
         background-position: 75% 50%
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(2) {
-        background-position: 75% 50%
+        background-position: 50% 50%
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(3) {
-        background-position: 75% 50%
+        background-position: 58% 50%
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(4) {
-        background-position: 75% 50%
+        background-position: 30% 50%
     }
 }
 @media (min-width:421px){
@@ -899,16 +899,16 @@
         top:25%;
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(1) {
-        background-position:90% 50%;
+        background-position:80% 50%;
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(2) {
-        background-position: 90% 50%
+        background-position: 55% 50%
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(3) {
-        background-position: 90% 50%
+        background-position: 65% 50%
     }
     .content_wrap .content1 .content_inside .content_left > a:nth-child(4) {
-        background-position: 90% 50%
+        background-position: 30% 50%
     }
 }
 @media (min-width:600px){

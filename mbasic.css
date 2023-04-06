@@ -40,7 +40,8 @@ a {
         background:rgba(255, 255, 255, .7);
     }
     .header .header_wrap {
-        height:50px;
+        width:100%;
+        height:100px;
     }
 
         /* Header - Logo */
@@ -70,6 +71,86 @@ a {
         .ham_btn i {
             font-size:30px;
         }
+        .fa-x {
+            display:none
+        }
+
+        /* ham deps*/
+        .ham_menu {
+            position:absolute;
+            top:70px;
+            left:-100%;
+            width:100%;
+        }
+        .ham_menu_wrap {
+            width:100%;
+            height:100%;
+            background:rgb(243, 243, 243);
+            text-align:center;
+        }
+        .ham_menu_wrap > li {
+            position:relative;
+            display:block;
+            font-size:14px;
+            padding:10px 0 0;
+            border-bottom:1px solid rgb(230, 230, 230);
+        }
+        .ham_menu_wrap > li:first-child {
+            border-top:1px solid lightgray;
+        }
+        .ham_menu_wrap > li:first-child > span {
+            display:inline-block;
+            content:"";
+            width:20px;
+            line-height:50px;
+            background:
+        }
+        .fa-angle-down {}
+        .fa-angle-up {
+            display:none;
+        }
+        .ham_menu_wrap > li:last-child {
+            border:none;
+        }
+        .ham_menu_wrap > li a {
+            display:inline-block;
+            line-height:50px;
+        }
+        .ham_menu_wrap > li:nth-child(6) a {
+            display:block;
+            content:"";
+            width:100%;
+            height:50px;
+            background:url('source/img/logo.svg') no-repeat 50% 50% / 15%; 
+        }
+        .blur {
+            display:block;
+            content:"";
+            background:rgba(0,0,0,.5);
+            width:100vw;
+            height:100vh;
+        }
+        .model_sub_wrap {
+            display:none;
+            background:white;
+        }
+        .model_sub_wrap.active{
+            display:block;
+        }
+        .model_sub {
+            font-size:13px;
+        }
+        .model_sub li {
+            line-height:15px;
+            border-bottom:1px solid rgb(240, 240, 240);
+        }
+        .model_sub li:last-child {
+            border:none;
+        }
+        .model_sub li a {
+            display:block;
+        }
+
 
             
     /* Layout - Footer */
